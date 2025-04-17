@@ -1,0 +1,21 @@
+
+#include <stdio.h>
+
+int main(){
+    
+    int n,x,result=0;
+    
+    printf("x = ");
+    scanf("%d",&x);
+    
+    for(int n=1;n<=20;n++){
+        
+        result = n * 3 * x * x;
+        
+    }
+    
+    printf(" result = %d ",result);
+    
+    return 0;
+    
+}
