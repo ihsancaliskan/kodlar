@@ -1,0 +1,29 @@
+
+#include <stdio.h>
+
+void func(double x,int n){
+    int k,a;
+    double sum=0.0,t=1.0;
+    
+    for (k=1;k<=n;k++){
+        for(int i=1;i<=k;i++){
+            t = t*x;
+        }
+        if(k%2 == 0){
+            a=1;
+        }
+        if(k%2 == 1){
+            a=-1;
+        }
+        
+        sum += ((t/k) * a); 
+        
+    }
+    printf(" sum = %lf",sum);
+}
+
+int main(){
+    
+    func(2.0,4);
+    
+}
