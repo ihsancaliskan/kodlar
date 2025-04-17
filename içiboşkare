@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+void box(int height,int width){
+    
+    for(int i=1;i<=height;i++){
+        for(int k=1;k<=width;k++){
+            if(i > 1 && i < height && k > 1 && k < width){
+                printf(" ");}
+            else{
+                printf("*");
+            }
+            
+        }
+        printf("\n");
+    }
+    
+}
+
+int main(){
+    int height,width;
+    printf("enter height = "); scanf("%d",&height);
+    printf("enter width = "); scanf("%d",&width);
+    box(height,width);
+    
+    return 0;
+}
