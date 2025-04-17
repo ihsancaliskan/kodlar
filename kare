@@ -1,0 +1,19 @@
+
+#include <stdio.h>
+
+void square(int square){
+    
+    int i,k;
+    
+    for(i=1;i<=square;i++){
+        for(k=1;k<=square;k++){
+            printf("*");
+        }
+        printf("\n");
+    }
+    
+}
+
+int main(){
+    square(5);
+}
