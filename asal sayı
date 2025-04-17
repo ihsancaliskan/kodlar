@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+void prime(int nbr)
+{
+    int i;
+    for(i=2; i<nbr; i++ )
+    {
+        if(nbr % i == 0)
+        {    
+            printf("asal değildir.");
+            break ;
+        }
+    }
+    if (i == nbr)
+    {
+        printf("asaldır");
+    }
+}
+
+
+
+
+int main() {
+
+    prime(10);
+
+    return 0;
+}
